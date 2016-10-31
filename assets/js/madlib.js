@@ -15,11 +15,10 @@ function hideOutput() {
 
 // validates combines text input and adds words to the madlib paragraph
 function dumpMadlib() {
-  // validate words in all text boxes
-  // bug will still allow whitespace
+  // make sure there are no empty values
   allTextInput = document.querySelectorAll('input[type="text"]');
   for (var i = 0; i < allTextInput.length; ++i) {
-    if (allTextInput[i].value.trim().match(/^[ A-Za-z' ]*$/) == null) {
+    if (allTextInput[i].value.trim().match(/\S/) == null) {
       alert("You need to enter a word in each text box");
       return
     }
@@ -45,7 +44,37 @@ function dumpMadlib() {
   var o = fSpan + document.getElementById("varO").value + bSpan;
   var p = fSpan + document.getElementById("varP").value + bSpan;
   // the massive z variable aka madlib paragraph
-  var z = "Come " + (a) + " at WALMART, where you`ll receive " +
+
+  //get id from h2 madlibTitle to determin what version to assemble
+  var elements = document.getElementsByName( "madlibTitle" );
+  var id = elements[0].getAttribute( "id");
+
+  //paragraph variable for madlib 1
+  var x = "Come " + (a) + " at WALMART, where you`ll receive " +
+  (b) + " discounts on all of your favorite brand name " +
+  (c) + ". Our " + (d) + " and " +
+  (e) + " associates are there to " + (f) + " you " +
+  (g) + " hours a day. Here you will find " +
+  (h) + " prices on the " + (i) + " you need. " +
+  (j) + " for the moms, " +
+  (k) + " for the kids and all the latest electronics for the " +
+  (l) +". So come on down to your " + (m) + " " +
+  (n) + " WALMART where the " + (o) + " come " + (p) +".";
+
+  //paragraph variable for madlib 2
+  var y = "Come " + (a) + " Madlib 2 at WALMART, where you`ll receive " +
+  (b) + " discounts on all of your favorite brand name " +
+  (c) + ". Our " + (d) + " and " +
+  (e) + " associates are there to " + (f) + " you " +
+  (g) + " hours a day. Here you will find " +
+  (h) + " prices on the " + (i) + " you need. " +
+  (j) + " for the moms, " +
+  (k) + " for the kids and all the latest electronics for the " +
+  (l) +". So come on down to your " + (m) + " " +
+  (n) + " WALMART where the " + (o) + " come " + (p) +".";
+
+  //paragraph variable for madlib 3
+  var z = "Come " + (a) + " Madlib 3 at WALMART, where you`ll receive " +
   (b) + " discounts on all of your favorite brand name " +
   (c) + ". Our " + (d) + " and " +
   (e) + " associates are there to " + (f) + " you " +
@@ -58,7 +87,18 @@ function dumpMadlib() {
 
   document.getElementById("inputSection").style.display = "none"; // hide input section
   document.getElementById("outputSection").style.visibility = "visible"; // display output section
-  document.getElementById("madlib").innerHTML = z;
+  //madlib 1
+  if(id=="madlib1"){
+    document.getElementById("madlib").innerHTML = x;
+  //madlib 2
+  }else if(id=="madlib2"){
+    document.getElementById("madlib").innerHTML = y;
+  //madlib 3
+  }else if(id=="madlib3"){
+    document.getElementById("madlib").innerHTML = z;
+  }else{
+    document.getElementById("madlib").innerHTML = "Oppsie there was an error.";
+  }
 }
 
 // reset page to redo madlib
