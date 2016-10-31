@@ -10,7 +10,7 @@
     <meta name="Mark Watanabe" content="">
     <link rel="icon" href="assets/favicon.ico">
 
-    <title>Mad Libs CSC364 Final Project - Second Mad Lib</title>
+    <title>Mad Libs CSC364 Final Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -20,73 +20,54 @@
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
-    <style>
-        #inputTable {
-            width: 90%;
-        }
 
-        #inputTable input {
-            float: right;
-            margin-right: 20px;
-        }
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-        #addedWords {
-            color: blue;
-            font-weight: bold;
-            font-size: 120%;
-        }
-    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body onload="hideOutput()">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-          <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Home</a>
-              <a class="navbar-brand" href="history.html">History</a>
-          </div>
-          <!--/.navbar-collapse -->
-      </div>
-  </nav>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="history.html">History</a>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <div id="inputSection">
-                <h2 id="madlib2" name="madlibTitle">Second Madlib</h2>
-                <table id="inputTable">
-                    <tr>
-                        <td>
-                            <P>Verb: <input type="text" required id="varA"></p>
-                            <P>Adjective: <input type="text" required id="varB"></p>
-                            <P>Noun (plural): <input type="text" required id="varC"></p>
-                            <P>Adjective: <input type="text" required id="varD"></p>
-                            <P>Verb enging in "ing": <input type="text" required id="varE"></p>
-                            <P>Verb: <input type="text" required id="varF"></p>
-                            <P>Number: <input type="number" id="varG" value="15"></p>
-                            <P>Adjective: <input type="text" required id="varH"></p>
-                        </td>
-                        <td>
-                            <P>Noun (plural): <input type="text" required id="varI"></p>
-                            <P>Noun (plural): <input type="text" required id="varJ"></p>
-                            <P>Noun (plural): <input type="text" required id="varK"></p>
-                            <P>Relative (plural): <input type="text" required id="varL"></p>
-                            <P>Adjective: <input type="text" required id="varM"></p>
-                            <P>Adjective: <input type="text" required id="varN"></p>
-                            <P>Noun (plural): <input type="text" required id="varO"></p>
-                            <P>Verb: <input type="text" required id="varP"></p>
-                        </td>
-                    </tr>
-                </table>
-                <input type="button" value="Submit Words" onclick="dumpMadlib()">
-                <input type="button" value="Clear Words" onclick="clearText()">
-            </div>
-            <div id="outputSection">
-                <h1>Second Madlib</h1>
-                <p id="madlib"></p>
-                <input type="button" value="Reset Madlib" onclick="resetMadlib()">
-            </div>
+            <h1>Mad Libs History</h1>
+            <img src="assets/img/madlib.png" class="img-responsive" align="right" alt="Mad Lib original cover" width="300" height="472"><p>Mad Libs was invented in 1953 by Leonard Stern and Roger Price. Stern and Price
+              co-created the game, but couldn't agree on a name for their invention. No name was
+              chosen until five years later (1958), when Stern and Price were eating eggs
+              Benedict at a restaurant in New York City. While eating, the two overheard an
+              argument at a neighboring table between a talent agent and an actor. According
+              to Price and Stern, during the overheard argument, the actor said that he wanted
+              to "ad-lib" an upcoming interview. The agent, who clearly disagreed with the
+              actor's suggestion, retorted that ad-libbing an interview would be "mad". Stern
+              and Price used that eavesdropped conversation to finally create the name "Mad Libs".
+              The duo released the first Mad Libs book themselves in 1958. The first Mad Libs resembled
+              the earlier games of consequences and exquisite corpse.</p>
+              <p>Stern and Price next partnered with Larry Sloan, a high school friend who was working as
+                a publicist at the time, to continue publishing Mad Libs. Together, the three founded
+                the publishing firm Price Stern Sloan in the early 1960s as a way to release Mad Libs.
+                In addition to releasing more than 70 editions of Mad Libs under Sloan, the company also
+                published 150 softcover books, including such notable titles as How to Be a Jewish Mother,
+                first released in 1964; Droodles, which was also created by Roger Price; The VIP Desk Diary;
+                and the series, World's Worst Jokes.</p>
         </div>
     </div>
+
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
@@ -110,6 +91,7 @@
             </div>
         </div>
         <hr>
+
         <footer>
             <p>&copy; 2016 Company, Inc.</p>
         </footer>
@@ -125,7 +107,6 @@
         window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
     </script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/madlib.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
