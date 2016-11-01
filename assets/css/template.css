@@ -1,0 +1,26 @@
+#inputTable {
+    width: 90%;
+}
+
+#inputTable input {
+    float: right;
+    margin-right: 20px;
+}
+
+#addedWords {
+    color: blue;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#submit {
+    background-color: #B3DBBF;
+}
+
+#clear {
+    background-color: #DBED74;
+}
+
+#reset {
+    background-color: #EDB874;
+}
