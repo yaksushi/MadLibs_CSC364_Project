@@ -91,13 +91,13 @@ function dumpMadlib() {
   // (fStro) + "Caveman #2: " + (bStro) + "Ouch! It's hot! In the name of " + (o) +"we made heat!" +
   // (fStro) + "Caveman #1: " + (bStro) + "We shall call this magical flaming " + (p) + " fire.";
   var z = "At one time man walked on four " + (a) + ", spoke in " + (b) + " grunts, and did not know how to make a/an " +
-  (c) + "fire. Here is the story of the day that changed mankind forever (translated from the " +
+  (c) + " fire. Here is the story of the day that changed mankind forever (translated from the " +
   (d) + " cave-speak): Caveman #1: It’s colder than (the) " + (e) + " in this cave. Even my warmest " +
   (f) + " fur won’t keep my " + (g) + " from shivering. Caveman #2: If only there was a way to make the cold " +
   (h) + " warmer because I think my " + (i) + " " + (j) + " has frostbite. Caveman #1: I'm borde. I think I'll play with these " +
   (k) + " sticks of wood. Caveman #2: Why don't you rub them " + (l) + " together and see what happens? Caveman #1: " +
   (m) + "! There’s smoke coming off those " + (n) + " sticks! Caveman #2: Ouch! It's hot! In the name of " +
-  (o) +"we made heat! Caveman #1: We shall call this magical flaming " + (p) + " fire.";
+  (o) +" we made heat! Caveman #1: We shall call this magical flaming " + (p) + " fire.";
 
   document.getElementById("inputSection").style.display = "none"; // hide input section
   document.getElementById("outputSection").style.display = "block"; // display output section

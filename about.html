@@ -10,7 +10,7 @@
     <meta name="Mark Watanabe" content="">
     <link rel="icon" href="assets/favicon.ico">
 
-    <title>Mad Libs CSC364 Final Project - Light My Fire</title>
+    <title>Mad Libs CSC364 Final Project - About</title>
     <!-- image sources: http://www.madlibs.com/books/
                         http://www.adamzyglis.com/
                         http://www.original-political-cartoon.com/cartoon-gallery/artists/mahony-francis-william-1905-1982/
@@ -25,7 +25,7 @@
     <link href="assets/css/template.css" rel="stylesheet">
 </head>
 
-<body onload="hideOutput()">
+<body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,7 +43,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li><a href="history.html">History</a></li>
-                <li><a href="about.html">About</a></li>
+                  <li><a href="#">About</a></li>
                   <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Mad Libs <span class="caret"></span></a>
                       <ul class="dropdown-menu">
@@ -63,43 +63,19 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <div id="inputSection">
-                <h2 id="madlib3" name="madlibTitle">Light My Fire</h2>
-                <table id="inputTable">
-                    <tr>
-                        <td>
-                            <P>Part of the body (plural): <input type="text" required id="varA"></p>
-                            <P>Adjective: <input type="text" required id="varB"></p>
-                            <P>Adjective: <input type="text" required id="varC"></p>
-                            <P>Adjective: <input type="text" required id="varD"></p>
-                            <P>A place: <input type="text" required id="varE"></p>
-                            <P>Animal: <input type="text" required id="varF"></p>
-                            <P>Noun: <input type="text" required id="varG"></p>
-                            <P>Adjective: <input type="text" required id="varH"></p>
-                        </td>
-                        <td>
-                            <P>Part of the body: <input type="text" required id="varI"></p>
-                            <P>Adjective: <input type="text" required id="varJ"></p>
-                            <P>Adverb: <input type="text" required id="varK"></p>
-                            <P>Exclamation: <input type="text" required id="varL"></p>
-                            <P>Adjective: <input type="text" required id="varM"></p>
-                            <P>Adverb: <input type="text" required id="varN"></p>
-                            <P>Person in room: <input type="text" required id="varO"></p>
-                            <P>Noun: <input type="text" required id="varP"></p>
-                        </td>
-                    </tr>
-                </table>
-                <input type="button" id="submit" value="Submit Words" onclick="dumpMadlib()">
-                <input type="button" id="clear" value="Clear Words" onclick="clearText()">
-            </div>
-            <div id="outputSection">
-                <h1>Light My Fire</h1>
-                <img src="assets/img/caveman.png" class="img-responsive" align="right" alt="Light My Fire" width="300" height="242">
-                <p id="madlib"></p>
-                <input type="button" id="reset" value="Reset Madlib" onclick="resetMadlib()">
-            </div>
+            <h1>About Us Page</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Image_needed.jpg" class="img-responsive" align="right" alt="Imag Needed" width="300" height="472"><p>!Text Needed! Vestibulum tristique, 
+              leo ut scelerisque pulvinar, tellus ante commodo velit, id lacinia est est vel sapien. Cras id dolor placerat, accumsan arcu non, tincidunt elit.
+              In volutpat velit quis nisi auctor, sed tempus lectus pellentesque. Aliquam imperdiet non lorem ac semper. In rhoncus maximus turpis, sit amet
+              semper sapien commodo vitae. Nullam viverra suscipit ligula sit amet convallis. Curabitur mollis libero mi, ac hendrerit mauris iaculis eget.
+              In pellentesque, metus sed fermentum fermentum, eros nulla aliquet quam, eu accumsan sapien diam non diam. Donec pretium egestas purus eu vulputate.
+              Nullam vestibulum mauris at porta convallis. Maecenas non elementum mi, ac sollicitudin purus. Integer nec ornare lacus.</p>
+              <p>Vivamus sit amet elit urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit eleifend neque, at consectetur quam
+                pellentesque eget. Integer semper, dui ac lobortis finibus, tortor tortor dignissim enim, quis commodo est lectus ut lectus. Sed id euismod
+                urna. Quisque fermentum nibh id eros hendrerit finibus. Nam interdum sit amet lacus a interdum. </p>
         </div>
     </div>
+
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
@@ -126,6 +102,7 @@
             </div>
         </div>
         <hr>
+
         <footer>
             <p>&copy; 2016 Company, Inc.</p>
         </footer>
@@ -141,7 +118,6 @@
         window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
     </script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/madlib.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
