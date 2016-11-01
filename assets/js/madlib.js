@@ -66,10 +66,8 @@ function dumpMadlib() {
 
   //paragraph variable for madlib 2
   var y = "Farmers work very hard planting wheat and  " + (a)
-  + ". They begin by plowing their " + (b) +
-  " and if they don’t have a tractor they use " + (c) +
-  ". Then they plant " + (d) +
-  " seeds and by the next fall they have many acres of " +
+  + ". They begin by " + (b) + " their fields and if they don’t have a tractor they use " +
+  (c) + ". Then they plant " + (d) + " seeds and by the next fall they have many acres of " +
   (e) + ". Tomatoes are harder to raise. They grow on " + (f) +
   " bushes and the farmer sprays them with " + (g) +
   " to keep the bugs off. The easiest things to grow are green " +
