@@ -62,16 +62,18 @@ function dumpMadlib() {
   (n) + " WALMART where the " + (o) + " come " + (p) +".";
 
   //paragraph variable for madlib 2
-  var y = "Come " + (a) + " Madlib 2 at WALMART, where you`ll receive " +
-  (b) + " discounts on all of your favorite brand name " +
-  (c) + ". Our " + (d) + " and " +
-  (e) + " associates are there to " + (f) + " you " +
-  (g) + " hours a day. Here you will find " +
-  (h) + " prices on the " + (i) + " you need. " +
-  (j) + " for the moms, " +
-  (k) + " for the kids and all the latest electronics for the " +
-  (l) +". So come on down to your " + (m) + " " +
-  (n) + " WALMART where the " + (o) + " come " + (p) +".";
+  var y = "Farmers work very hard planting wheat and  " + (a)
+  + ". They begin by plowing their " + (b) +
+  " and if they don’t have a tractor they use " + (c) +
+  ". Then they plant " + (d) +
+  " seeds and by the next fall they have many acres of " +
+  (e) + ". Tomatoes are harder to raise. They grow on " + (f) +
+  " bushes and the farmer sprays them with " + (g) +
+  " to keep the bugs off. The easiest things to grow are green " +
+  (h) + " but the farmer must be very careful to make sure worms don’t get into his "
+  + (i) + ". Farmers also raise " + (j) + " and grow onions, cabbages, lettuce, and " +
+  (k) + " . But no matter what they grow, farmers really lead a/an " +
+  (l) + " life.";
 
   //paragraph variable for madlib 3
   var z = "Come " + (a) + " Madlib 3 at WALMART, where you`ll receive " +
