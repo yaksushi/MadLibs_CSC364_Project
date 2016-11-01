@@ -10,7 +10,7 @@ document.getElementById('fm').addEventListener('click',submit_form)
 
 // hides madlib output section
 function hideOutput() {
-    document.getElementById("outputSection").style.visibility = "hidden";
+    document.getElementById("outputSection").style.display = "none";
 }
 
 // validates combines text input and adds words to the madlib paragraph
@@ -26,6 +26,9 @@ function dumpMadlib() {
   // style variables
   var fSpan = "<span id=addedWords>";
   var bSpan = "</span>";
+  // var fStro = "<br><br><strong>"
+  // var bStro = "</strong>"
+
   // word variables
   var a = fSpan + document.getElementById("varA").value + bSpan;
   var b = fSpan + document.getElementById("varB").value + bSpan;
@@ -76,19 +79,30 @@ function dumpMadlib() {
   (l) + " life.";
 
   //paragraph variable for madlib 3
-  var z = "Come " + (a) + " Madlib 3 at WALMART, where you`ll receive " +
-  (b) + " discounts on all of your favorite brand name " +
-  (c) + ". Our " + (d) + " and " +
-  (e) + " associates are there to " + (f) + " you " +
-  (g) + " hours a day. Here you will find " +
-  (h) + " prices on the " + (i) + " you need. " +
-  (j) + " for the moms, " +
-  (k) + " for the kids and all the latest electronics for the " +
-  (l) +". So come on down to your " + (m) + " " +
-  (n) + " WALMART where the " + (o) + " come " + (p) +".";
+  // var z = "At one time man walked on four " + (a) + ", spoke in " +
+  // (b) + " grunts, and did not know how to make a/an " +
+  // (c) + "fire. Here is the story of the day that changed mankind forever (translated from the " +
+  // (d) + " cave-speak): " +
+  // (fStro) + "Caveman #1: " + (bStro) + "It’s colder than (the) " + (e) + " in this cave. Even my warmest " +
+  // (f) + " fur won’t keep my " + (g) + " from shivering." +
+  // (fStro) + "Caveman #2: " + (bStro) + "If only there was a way to make the cold " +
+  // (h) + " warmer because I think my " + (i) + " " + (j) + " has frostbite." +
+  // (fStro) + "Caveman #1: " + (bStro) + "I'm borde. I think I'll play with these " +  (k) + " sticks of wood." +
+  // (fStro) + "Caveman #2: " + (bStro) + "Why don't you rub them " + (l) +" together and see what happens?" +
+  // (fStro) + "Caveman #1: " + (bStro) + (m) + "! There’s smoke coming off those " + (n) + " sticks!" +
+  // (fStro) + "Caveman #2: " + (bStro) + "Ouch! It's hot! In the name of " + (o) +"we made heat!" +
+  // (fStro) + "Caveman #1: " + (bStro) + "We shall call this magical flaming " + (p) + " fire.";
+  var z = "At one time man walked on four " + (a) + ", spoke in " + (b) + " grunts, and did not know how to make a/an " +
+  (c) + "fire. Here is the story of the day that changed mankind forever (translated from the " +
+  (d) + " cave-speak): Caveman #1: It’s colder than (the) " + (e) + " in this cave. Even my warmest " +
+  (f) + " fur won’t keep my " + (g) + " from shivering. Caveman #2: If only there was a way to make the cold " +
+  (h) + " warmer because I think my " + (i) + " " + (j) + " has frostbite. Caveman #1: I'm borde. I think I'll play with these " +
+  (k) + " sticks of wood. Caveman #2: Why don't you rub them " + (l) + " together and see what happens? Caveman #1: " +
+  (m) + "! There’s smoke coming off those " + (n) + " sticks! Caveman #2: Ouch! It's hot! In the name of " +
+  (o) +"we made heat! Caveman #1: We shall call this magical flaming " + (p) + " fire.";
 
   document.getElementById("inputSection").style.display = "none"; // hide input section
-  document.getElementById("outputSection").style.visibility = "visible"; // display output section
+  document.getElementById("outputSection").style.display = "block"; // display output section
   //madlib 1
   if(id=="madlib1"){
     document.getElementById("madlib").innerHTML = x;
