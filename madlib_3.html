@@ -19,35 +19,19 @@
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-    <style>
-        #inputTable {
-            width: 90%;
-        }
-
-        #inputTable input {
-            float: right;
-            margin-right: 20px;
-        }
-
-        #addedWords {
-            color: blue;
-            font-weight: bold;
-            font-size: 120%;
-        }
-    </style>
+    <link href="assets/css/template.css" rel="stylesheet">
 </head>
 
 <body onload="hideOutput()">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-          <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Home</a>
-              <a class="navbar-brand" href="history.html">History</a>
-          </div>
-          <!--/.navbar-collapse -->
-      </div>
-  </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="history.html">History</a>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
@@ -77,13 +61,13 @@
                         </td>
                     </tr>
                 </table>
-                <input type="button" value="Submit Words" onclick="dumpMadlib()">
-                <input type="button" value="Clear Words" onclick="clearText()">
+                <input type="button" id="submit" value="Submit Words" onclick="dumpMadlib()">
+                <input type="button" id="clear" value="Clear Words" onclick="clearText()">
             </div>
             <div id="outputSection">
                 <h1>The Walmart Difference</h1>
                 <p id="madlib"></p>
-                <input type="button" value="Reset Madlib" onclick="resetMadlib()">
+                <input type="button" id="reset" value="Reset Madlib" onclick="resetMadlib()">
             </div>
         </div>
     </div>
