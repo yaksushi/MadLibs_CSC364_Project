@@ -50,7 +50,11 @@ function dumpMadlib() {
   var r = fSpan + document.getElementById("varR").value + bSpan;
   var s = fSpan + document.getElementById("varS").value + bSpan;
   var t = fSpan + document.getElementById("varT").value + bSpan;
-  // the massive z variable aka madlib paragraph
+  var u = fSpan + document.getElementById("varU").value + bSpan;
+  var v = fSpan + document.getElementById("varV").value + bSpan;
+  var w = fSpan + document.getElementById("varW").value + bSpan;
+  var x = fSpan + document.getElementById("varX").value + bSpan;
+  var y = fSpan + document.getElementById("varY").value + bSpan;
 
   //get id from h2 madlibTitle to determin what version to assemble
   var elements = document.getElementsByName( "madlibTitle" );
@@ -103,6 +107,18 @@ function dumpMadlib() {
   ", causing it to " + (r) + ", which shoots a fireball straight into the heart of " + (s) +
   " and destroys the bad guy leader. Everything is " + (t) + " and the story is over.";
 
+  //paragraph variable for madlib 5
+  var madLib5 = "Just waking up in the " + (a) + ", gotta thank " + (b) + ". I don't know, but today seems kinda " + (c) +
+  ". No " + (d) + " from the " + (e) + ", no smog, and momma cooked a breakfast with no " + (f) +
+  ". I got my grub on, but I didn't " + (g) + " out. Finally got a call from a girl I wan to " + (h) +
+  ". Hooked it up for later as I hit the door, thinking. Will I live to see another " + (i) +
+  "? I gotta go 'cause I got me a " + (j) + ", and if I hit that switch I can make the ass " + (k) +
+  ". Had to stop at a " + (l) + "; looking in the mirror, not a " + (m) + " in sight and everything is " + (n) +
+  ". I got a beep from " + (o) + " an she can " + (p) + " all night. Calling up the " + (q) +
+  " and I'm asking y'all, which " + (r) + " are y'all playing " + (s) + "? Get me on the " + (t) +
+  " and I'm trouble. Last week, " + (u) + " around and got a " + (v) + ". Freaking " + (w) +
+  " every way like " + (x) + ". I can't believe today was a " + (y) + " day.";
+
 
   document.getElementById("inputSection").style.display = "none"; // hide input section
   document.getElementById("outputSection").style.display = "block"; // display output section
@@ -116,8 +132,11 @@ function dumpMadlib() {
   }else if(id=="madlib3"){
     document.getElementById("madlib").innerHTML = madLib3;
   //madlib 4
-}else if(id=="madlib4"){
+  }else if(id=="madlib4"){
     document.getElementById("madlib").innerHTML = madLib4;
+  //madlib 5
+}else if(id=="madlib5"){
+    document.getElementById("madlib").innerHTML = madLib5;
   }else{
     document.getElementById("madlib").innerHTML = "Oppsie there was an error.";
   }
