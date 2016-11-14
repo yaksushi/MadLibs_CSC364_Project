@@ -10,7 +10,7 @@
     <meta name="Mark Watanabe" content="">
     <link rel="icon" href="assets/favicon.ico">
 
-    <title>Mad Libs CSC364 Final Project</title>
+    <title>Mad Libs CSC364 Final Project - Michael Bay</title>
     <!-- image sources: http://www.madlibs.com/books/
                         http://www.adamzyglis.com/
                         http://www.original-political-cartoon.com/cartoon-gallery/artists/mahony-francis-william-1905-1982/
@@ -25,7 +25,7 @@
     <link href="assets/css/template.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="hideOutput()">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -65,18 +65,58 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1>Mad Libs</h1>
-            <img src="assets/img/madlib_main.png" class="img-responsive" align="right" alt="Mad Lib main image" width="400" height="315">
-            <p>The world’s greatest word game is back with an all-new look! Fill in the blanks and be the funniest person in the room!</p>
-            <p>Originally a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the – often comical or nonsensical – story aloud. The game was frequently played as a party game
-                or as a pastime.</p>
-
-            <p>The game was invented in the United States, and more than 110 million copies of Mad Libs books have been sold since the series was first published in 1958.</p>
-            <p><a class="btn btn-primary btn-lg" href="history.html" role="button">Learn more &raquo;</a></p>
+            <div id="inputSection">
+                <h2 id="madlib4" name="madlibTitle">Michael Bay</h2>
+                <table id="inputTable">
+                    <tr>
+                        <td>
+                            <P>Man's Name: <input type="text" required id="varA"></p>
+                            <P>Occupation: <input type="text" required id="varB"></p>
+                            <P>Noun: <input type="text" required id="varC"></p>
+                            <P>Noun: <input type="text" required id="varD"></p>
+                            <P>Noun: <input type="text" required id="varE"></p>
+                            <P>Shape: <input type="text" required id="varF"></p>
+                            <P>Man's Name: <input type="text" id="varG"></p>
+                            <P>Verb: <input type="text" required id="varH"></p>
+                            <P>Woman's Name: <input type="text" required id="varI"></p>
+                            <P>Body Part: <input type="text" required id="varJ"></p>
+                        </td>
+                        <td>
+                            <P>Verb: <input type="text" required id="varK"></p>
+                            <P>Noun: <input type="text" required id="varL"></p>
+                            <P>Noun: <input type="text" required id="varM"></p>
+                            <P>Restaurant Name: <input type="text" required id="varN"></p>
+                            <P>Historic Monument: <input type="text" required id="varO"></p>
+                            <P>Verb: <input type="text" required id="varP"></p>
+                            <P>Noun: <input type="text" required id="varQ"></p>
+                            <P>Verb: <input type="text" required id="varR"></p>
+                            <P>Noun: <input type="text" required id="varS"></p>
+                            <P>Adjective: <input type="text" required id="varT"></p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="button" id="submit" value="Submit Words" onclick="dumpMadlib()">
+                <input type="button" id="clear" value="Clear Words" onclick="clearText()">
+            </div>
+            <div id="outputSection">
+                <h1>Michael Bay</h1>
+                <img src="assets/img/bay.png" class="img-responsive" align="right" alt="Michael Bay" width="300" height="242">
+                <p id="madlib"></p>
+                <input type="button" id="reset" value="Reset Madlib" onclick="resetMadlib()">
+            </div>
         </div>
     </div>
-
     <div class="container">
+        <!-- <div class="row">
+        <div class="col-md-12">
+          <div id="outputSection">
+              <h1>The Walmart Difference</h1>
+              <img src="assets/img/walmart.png" class="img-responsive" align="right" alt="Walmart" width="300" height="242">
+              <p id="madlib"></p>
+              <input type="button" id="reset" value="Reset Madlib" onclick="resetMadlib()">
+          </div>
+        </div>
+      </div> -->
         <!-- Example row of columns -->
         <div class="row">
             <div class="col-md-4">
@@ -102,7 +142,6 @@
             </div>
         </div>
         <hr>
-
         <footer>
             <p>&copy; 2016 Company, Inc.</p>
         </footer>
@@ -118,6 +157,7 @@
         window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
     </script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/madlib.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

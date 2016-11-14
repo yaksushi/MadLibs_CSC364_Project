@@ -46,6 +46,10 @@ function dumpMadlib() {
   var n = fSpan + document.getElementById("varN").value + bSpan;
   var o = fSpan + document.getElementById("varO").value + bSpan;
   var p = fSpan + document.getElementById("varP").value + bSpan;
+  var q = fSpan + document.getElementById("varQ").value + bSpan;
+  var r = fSpan + document.getElementById("varR").value + bSpan;
+  var s = fSpan + document.getElementById("varS").value + bSpan;
+  var t = fSpan + document.getElementById("varT").value + bSpan;
   // the massive z variable aka madlib paragraph
 
   //get id from h2 madlibTitle to determin what version to assemble
@@ -53,7 +57,7 @@ function dumpMadlib() {
   var id = elements[0].getAttribute( "id");
 
   //paragraph variable for madlib 1
-  var x = "Come " + (a) + " at WALMART, where you`ll receive " +
+  var madLib1 = "Come " + (a) + " at WALMART, where you`ll receive " +
   (b) + " discounts on all of your favorite brand name " +
   (c) + ". Our " + (d) + " and " +
   (e) + " associates are there to " + (f) + " you " +
@@ -65,7 +69,7 @@ function dumpMadlib() {
   (n) + " WALMART where the " + (o) + " come " + (p) +".";
 
   //paragraph variable for madlib 2
-  var y = "Farmers work very hard planting wheat and  " + (a)
+  var madLib2 = "Farmers work very hard planting wheat and  " + (a)
   + ". They begin by " + (b) + " their fields and if they don’t have a tractor they use " +
   (c) + ". Then they plant " + (d) + " seeds and by the next fall they have many acres of " +
   (e) + ". Tomatoes are harder to raise. They grow on " + (f) +
@@ -77,20 +81,7 @@ function dumpMadlib() {
   (l) + " life.";
 
   //paragraph variable for madlib 3
-  // var z = "At one time man walked on four " + (a) + ", spoke in " +
-  // (b) + " grunts, and did not know how to make a/an " +
-  // (c) + "fire. Here is the story of the day that changed mankind forever (translated from the " +
-  // (d) + " cave-speak): " +
-  // (fStro) + "Caveman #1: " + (bStro) + "It’s colder than (the) " + (e) + " in this cave. Even my warmest " +
-  // (f) + " fur won’t keep my " + (g) + " from shivering." +
-  // (fStro) + "Caveman #2: " + (bStro) + "If only there was a way to make the cold " +
-  // (h) + " warmer because I think my " + (i) + " " + (j) + " has frostbite." +
-  // (fStro) + "Caveman #1: " + (bStro) + "I'm borde. I think I'll play with these " +  (k) + " sticks of wood." +
-  // (fStro) + "Caveman #2: " + (bStro) + "Why don't you rub them " + (l) +" together and see what happens?" +
-  // (fStro) + "Caveman #1: " + (bStro) + (m) + "! There’s smoke coming off those " + (n) + " sticks!" +
-  // (fStro) + "Caveman #2: " + (bStro) + "Ouch! It's hot! In the name of " + (o) +"we made heat!" +
-  // (fStro) + "Caveman #1: " + (bStro) + "We shall call this magical flaming " + (p) + " fire.";
-  var z = "At one time man walked on four " + (a) + ", spoke in " + (b) + " grunts, and did not know how to make a/an " +
+  var madLib3 = "At one time man walked on four " + (a) + ", spoke in " + (b) + " grunts, and did not know how to make a/an " +
   (c) + " fire. Here is the story of the day that changed mankind forever (translated from the " +
   (d) + " cave-speak): Caveman #1: It’s colder than (the) " + (e) + " in this cave. Even my warmest " +
   (f) + " fur won’t keep my " + (g) + " from shivering. Caveman #2: If only there was a way to make the cold " +
@@ -99,17 +90,34 @@ function dumpMadlib() {
   (m) + "! There’s smoke coming off those " + (n) + " sticks! Caveman #2: Ouch! It's hot! In the name of " +
   (o) +" we made heat! Caveman #1: We shall call this magical flaming " + (p) + " fire.";
 
+  //paragraph variable for madlib 4
+  var madLib4 = (a) + " is a normal " + (b) + ". Then, one day, a " + (c) +
+  " explodes, causing a " + (d) + " to blow up, and a nearby " + (e) +
+  " erupts into a " + (f) + " of flames. " + (g) +
+  " realizes that he's being chased by the government, who's trying to " + (h) +
+  " him. While on the run, he teams up with an incredibly attractive woman named " + (i) +
+  ", who has an incredible " + (j) + ". She may be from the streets, but she can " + (k) +
+  " like nobody's business. The duo decide to turn the tables on their pursuers by blowing up a " + (l) +
+  ", which triggers a chain reaction, causing the local " + (m) + ", " + (n) + ", and the " + (o) +
+  " to explode. Then, the bad guys' helicopter gets " + (p) + " by a piece of " + (q) +
+  ", causing it to " + (r) + ", which shoots a fireball straight into the heart of " + (s) +
+  " and destroys the bad guy leader. Everything is " + (t) + " and the story is over.";
+
+
   document.getElementById("inputSection").style.display = "none"; // hide input section
   document.getElementById("outputSection").style.display = "block"; // display output section
   //madlib 1
   if(id=="madlib1"){
-    document.getElementById("madlib").innerHTML = x;
+    document.getElementById("madlib").innerHTML = madLib1;
   //madlib 2
   }else if(id=="madlib2"){
-    document.getElementById("madlib").innerHTML = y;
+    document.getElementById("madlib").innerHTML = madLib2;
   //madlib 3
   }else if(id=="madlib3"){
-    document.getElementById("madlib").innerHTML = z;
+    document.getElementById("madlib").innerHTML = madLib3;
+  //madlib 4
+}else if(id=="madlib4"){
+    document.getElementById("madlib").innerHTML = madLib4;
   }else{
     document.getElementById("madlib").innerHTML = "Oppsie there was an error.";
   }
