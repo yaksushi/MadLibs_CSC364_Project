@@ -135,7 +135,7 @@ function dumpMadlib() {
   }else if(id=="madlib4"){
     document.getElementById("madlib").innerHTML = madLib4;
   //madlib 5
-}else if(id=="madlib5"){
+  }else if(id=="madlib5"){
     document.getElementById("madlib").innerHTML = madLib5;
   }else{
     document.getElementById("madlib").innerHTML = "Oppsie there was an error.";
