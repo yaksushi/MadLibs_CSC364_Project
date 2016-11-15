@@ -83,8 +83,8 @@
 				<?php include "_footer.php";?>
 			</div>
 			<!-- /container -->
-		
-			<!-- Footer -->
+
+      <!-- Footer Scripts -->
 			<?php include "_footerScripts.php";?>
 		</body>
 

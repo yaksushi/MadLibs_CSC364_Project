@@ -84,7 +84,7 @@
 	</div>
 	<!-- /container -->
 
-	<!-- Footer -->
+  <!-- Footer Scripts -->
 	<?php include "_footerScripts.php";?>
 </body>
 
