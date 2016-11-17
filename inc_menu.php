@@ -26,9 +26,20 @@
                         <li><a href="madlib_3.php">Light My Fire</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="madlib_4.php">Michael Bay</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="madlib_5.php">Ice Cube</a></li>
                     </ul>
                 </li>
             </ul>
+            <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
         </div>
         <!-- /.navbar-collapse -->
     </div>

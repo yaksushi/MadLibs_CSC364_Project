@@ -7,6 +7,6 @@
             or as a pastime.</p>
 
         <p>The game was invented in the United States, and more than 110 million copies of Mad Libs books have been sold since the series was first published in 1958.</p>
-        <p><a class="btn btn-primary btn-lg" href="history.html" role="button">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="history.php" role="button">Learn more &raquo;</a></p>
     </div>
 </div>

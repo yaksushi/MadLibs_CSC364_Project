@@ -16,28 +16,28 @@
                         http://www.original-political-cartoon.com/cartoon-gallery/artists/mahony-francis-william-1905-1982/
     -->
 	<!-- Header Scripts -->
-	<?php include "_headerScripts.php";?>
+	<?php include "inc_headerScripts.php";?>
 
 </head>
 
 <body>
 	<!-- Menu navbar -->
-	<?php include "_menu.php";?>
+	<?php include "inc_menu.php";?>
 
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<?php include "_fpJumbotron.php";?>
+	<?php include "inc_fpJumbotron.php";?>
 
 	<div class="container">
 		<!-- 3 Columns Bottom Content -->
-		<?php include "_bottomContent.php";?>
+		<?php include "inc_bottomContent.php";?>
 
 		<!-- Footer -->
-		<?php include "_footer.php";?>
+		<?php include "inc_footer.php";?>
 	</div>
 	<!-- /container -->
 
 	<!-- Footer -->
-	<?php include "_footerScripts.php";?>
+	<?php include "inc_footerScripts.php";?>
 </body>
 
 </html>
