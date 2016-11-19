@@ -9,7 +9,6 @@ if (isset($_SESSION['userSession'])!="") {
 }
 
 if (isset($_POST['btn-login'])) {
-
 	$email = strip_tags($_POST['email']);
 	$password = strip_tags($_POST['password']);
 
@@ -26,23 +25,27 @@ if (isset($_POST['btn-login'])) {
 		header("Location: home.php");
 	} else {
 		$msg = "<div class='alert alert-danger'>
-					<span class='glyphicon glyphicon-info-sign'></span> &nbsp; Invalid Username or Password !
-				</div>";
+		<span class='glyphicon glyphicon-info-sign'></span> &nbsp; Invalid Username or Password !</div>";
 	}
 	$connection->close();
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<!-- Meta Info -->
-	<?php include "inc_meta.php";?>
-	<title>Mad Libs CSC364 Final Project - Login</title>
-	<!-- Header Scripts -->
-	<?php include "inc_headerScripts.php";?>
+<!-- Header -->
+<?php
+ob_start();
+include("inc_header.php");
+$buffer=ob_get_contents();
+ob_end_clean();
 
-</head>
+$site = "Mad Libs CSC364 Final Project - "; //Site title
+$pageTitle = "Login";  //Specific page title
+$title = $site . $pageTitle; //Combine site and page title
+$buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer); //replace title tag with page specific title
+
+echo $buffer;
+?>
+
 <body>
 	<!-- Menu navbar -->
 	<?php include "inc_menu_placeholder.php";?>
@@ -57,7 +60,7 @@ if (isset($_POST['btn-login'])) {
 	    <!-- <p><a class="btn btn-primary btn-lg" href="history.php" role="button">Learn more &raquo;</a></p> -->
 			<div class="container">
 				<form class="form-signin" method="post" id="login-form">
-					<h2 class="form-signin-heading">Login</h2><hr />
+					<h2 class="form-signin-heading">Sign In</h2><hr />
 					<?php
 					if(isset($msg)){
 						echo $msg;
@@ -76,8 +79,8 @@ if (isset($_POST['btn-login'])) {
 					<div class="form-group">
 						<button type="submit" class="btn btn-success" name="btn-login" id="btn-login">
 							<span class="glyphicon glyphicon-log-in"></span> &nbsp; Sign In</button>
-							<a href="register.php" class="btn btn-primary" >
-								<span class="glyphicon glyphicon-user"></span> &nbsp; Register Here
+							<a href="register.php" class="btn btn-primary" id="registerButton">
+								<span class="glyphicon glyphicon-user"></span> &nbsp; Register For A New Account
 							</a>
 					</div>
 				</form>

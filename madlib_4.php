@@ -1,17 +1,20 @@
 <!-- Check Session -->
 <?php include "inc_session.php";?>
 
-<!DOCTYPE html>
-<html lang="en">
+<!-- Header -->
+<?php
+ob_start();
+include("inc_header.php");
+$buffer=ob_get_contents();
+ob_end_clean();
 
-<head>
-	<!-- Meta Info -->
-	<?php include "inc_meta.php";?>
-	<title>Mad Libs CSC364 Final Project - Michael Bay</title>
-	<!-- Header Scripts -->
-	<?php include "inc_headerScripts.php";?>
+$site = "Mad Libs CSC364 Final Project - "; //Site title
+$pageTitle = "Michael Bay";  //Specific page title
+$title = $site . $pageTitle; //Combine site and page title
+$buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer); //replace title tag with page specific title
 
-</head>
+echo $buffer;
+?>
 
 <body onload="hideOutput()">
 	<!-- Menu navbar -->

@@ -6,7 +6,6 @@ if (isset($_SESSION['userSession'])!="") {
 require_once 'dbconnect.php';
 
 if(isset($_POST['btn-signup'])) {
-
 	$uname = strip_tags($_POST['username']);
 	$email = strip_tags($_POST['email']);
 	$upass = strip_tags($_POST['password']);
@@ -21,42 +20,38 @@ if(isset($_POST['btn-signup'])) {
 	$count=$check_email->num_rows;
 
 	if ($count==0) {
-
 		$query = "INSERT INTO tbl_users(username,email,password) VALUES('$uname','$email','$hashed_password')";
-
 		if ($connection->query($query)) {
 			$msg = "<div class='alert alert-success'>
-						<span class='glyphicon glyphicon-info-sign'></span> &nbsp; Congragulation you have successfully registered !
-					</div>";
+			<span class='glyphicon glyphicon-info-sign'></span> &nbsp; Congragulation you have successfully registered!<br />
+			Please return to the <a href='index.php'>Login Page to sign in.</a></div>";
 		}else {
 			$msg = "<div class='alert alert-danger'>
-						<span class='glyphicon glyphicon-info-sign'></span> &nbsp; error while registering !
-					</div>";
+			<span class='glyphicon glyphicon-info-sign'></span> &nbsp; error while registering !</div>";
 		}
-
 	} else {
-
-
 		$msg = "<div class='alert alert-danger'>
-					<span class='glyphicon glyphicon-info-sign'></span> &nbsp; sorry email already taken !
-				</div>";
-
+		<span class='glyphicon glyphicon-info-sign'></span> &nbsp; sorry email already taken !</div>";
 	}
-
 	$connection->close();
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<!-- Meta Info -->
-	<?php include "inc_meta.php";?>
-	<title>Mad Libs CSC364 Final Project - Register</title>
-	<!-- Header Scripts -->
-	<?php include "inc_headerScripts.php";?>
+<!-- Header -->
+<?php
+ob_start();
+include("inc_header.php");
+$buffer=ob_get_contents();
+ob_end_clean();
 
-</head>
+$site = "Mad Libs CSC364 Final Project - "; //Site title
+$pageTitle = "Register";  //Specific page title
+$title = $site . $pageTitle; //Combine site and page title
+$buffer = preg_replace('/(<title>)(.*?)(<\/title>)/i', '$1' . $title . '$3', $buffer); //replace title tag with page specific title
+
+echo $buffer;
+?>
+
 <body>
 	<!-- Menu navbar -->
 	<?php include "inc_menu_placeholder.php";?>
@@ -89,11 +84,11 @@ if(isset($_POST['btn-signup'])) {
 					</div>
 					<hr />
 					<div class="form-group">
-						<button type="submit" class="btn btn-primary" name="btn-signup">
+						<button type="submit" class="btn btn-success"name="btn-signup">
 							<span class="glyphicon glyphicon-user"></span> &nbsp; Register
 						</button>
-						<a href="index.php" class="btn btn-success">
-							<span class="glyphicon glyphicon-log-in"></span> &nbsp; Sign In
+						<a href="index.php" class="btn btn-primary" id="loginButton">
+							<span class="glyphicon glyphicon-log-in" ></span> &nbsp; Sign In To An Existing Account
 						</a>
 					</div>
 				</form>

@@ -30,3 +30,11 @@
     width: 400px;
     height: 315px;
 }
+
+#registerButton.btn.btn-primary {
+    float: right;
+}
+
+#loginButton.btn.btn-primary {
+    float: right;
+}

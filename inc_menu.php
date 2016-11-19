@@ -11,7 +11,7 @@ Not used on index or registration page -->
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.php">Home</a>
+    <a class="navbar-brand" href="home.php">Home</a>
   </div>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,7 +37,7 @@ Not used on index or registration page -->
       <div class="form-group">
         <input placeholder="Welcome <?php echo $userRow['username']; ?>" class="form-control">
       </div>
-      <a href="logout.php?logout" class="btn btn-warning">
+      <a href="logout.php?logout" class="btn btn-primary">
         <span class="glyphicon glyphicon-log-out"></span> &nbsp; Sign Out
       </a>
     </form>
