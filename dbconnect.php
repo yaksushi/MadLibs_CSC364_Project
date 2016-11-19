@@ -1,13 +1,17 @@
 <?php
-$DBhost = "dev.cictspace.net";
-$DBport = "3306";
-$DBuser = "MWATAN8019";
-$DBpass = "Obiwan010";
-$DBname = "MWATAN8019_CSC322";
+//mysql vairables
+$dbhost= "dev.cictspace.net";
+$dbport = "3306";
+$dbuser = "MWATAN8019";
+$dbpass = "Obiwan010";
+$dbname = "MWATAN8019_CSC322";
 
-$DBcon = new MySQLi($DBhost,$DBuser,$DBpass,$DBname, $DBport);
-
-if ($DBcon->connect_errno) {
-  die("ERROR : -> ".$DBcon->connect_error);
+$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname, $dbport);
+// Test if connection occured.
+if(mysqli_connect_errno()) {
+  die("Database connection failed: " .
+    mysqli_connect_error() .
+    " (" . mysqli_connect_errno() . ")"
+  );
 }
 ?>

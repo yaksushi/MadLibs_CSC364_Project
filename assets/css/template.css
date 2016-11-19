@@ -24,3 +24,9 @@
 #reset {
     background-color: #EDB874;
 }
+
+#mainImage {
+    float: right;
+    width: 400px;
+    height: 315px;
+}

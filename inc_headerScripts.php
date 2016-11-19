@@ -1,3 +1,5 @@
+<!-- Include file for header scripts -->
+
 <!-- Bootstrap core CSS -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 

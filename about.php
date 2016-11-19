@@ -1,20 +1,13 @@
+<!-- Check Session -->
+<?php include "inc_session.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="Mad Libs CSC364" content="" />
-	<meta name="Mark Watanabe" content="" />
-	<link rel="icon" href="assets/favicon.ico" />
-
+	<!-- Meta Info -->
+	<?php include "inc_meta.php";?>
 	<title>Mad Libs CSC364 Final Project - About</title>
-	<!-- image sources: http://www.madlibs.com/books/
-                        http://www.adamzyglis.com/
-                        http://www.original-political-cartoon.com/cartoon-gallery/artists/mahony-francis-william-1905-1982/
-    -->
 	<!-- Header Scripts -->
 	<?php include "inc_headerScripts.php";?>
 
@@ -28,7 +21,7 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1>About Us Page</h1>
-			<img src="http://www.madlibs.com/content/themes/madlibs/dist/images/intro_logo.png" class="img-responsive" align="right" alt="Madlibs Logo" width="300" height="472">
+			<img src="assets/img/madliblogo.png" class="img-responsive" alt="Madlibs Logo" id="mainImage">
       	<p>The creation of Mad Libs is directly linked to the founders inability to spell “hyperbole” in a seventh-grade spelling bee.
 					Humiliated and embarrassed beyond words, he ran home to take refuge in the family dictionary, determined to learn the correct
           spelling and exact meaning of as many words as humanly possible. The dictionary became his constant companion – his roommate.

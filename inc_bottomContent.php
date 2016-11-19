@@ -1,3 +1,5 @@
+<!-- Include file for the bottom 3 column content -->
+
 <div class="row">
   <div class="col-md-4">
     <h2>Walmart Difference</h2>

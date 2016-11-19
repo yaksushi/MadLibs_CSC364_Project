@@ -1,22 +1,15 @@
+<!-- Check Session -->
+<?php include "inc_session.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="Mad Libs CSC364" content="">
-    <meta name="Mark Watanabe" content="">
-    <link rel="icon" href="assets/favicon.ico">
-
-    <title>Mad Libs CSC364 Final Project - Michael Bay</title>
-    <!-- image sources: http://www.madlibs.com/books/
-                        http://www.adamzyglis.com/
-                        http://www.original-political-cartoon.com/cartoon-gallery/artists/mahony-francis-william-1905-1982/
-    -->
-		<!-- Header Scripts -->
-	  <?php include "inc_headerScripts.php";?>
+	<!-- Meta Info -->
+	<?php include "inc_meta.php";?>
+	<title>Mad Libs CSC364 Final Project - Michael Bay</title>
+	<!-- Header Scripts -->
+	<?php include "inc_headerScripts.php";?>
 
 </head>
 
@@ -68,7 +61,7 @@
 				</div>
 				<div id="outputSection">
 						<h1>Michael Bay</h1>
-						<img src="assets/img/bay.png" class="img-responsive" align="right" alt="Michael Bay" width="300" height="242">
+						<img src="assets/img/bay.png" class="img-responsive" alt="Michael Bay" id="mainImage">
 						<p id="madlib"></p>
 						<input type="button" id="reset" value="Reset Madlib" onclick="resetMadlib()">
 				</div>

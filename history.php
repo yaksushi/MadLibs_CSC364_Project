@@ -1,22 +1,15 @@
+<!-- Check Session -->
+<?php include "inc_session.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="Mad Libs CSC364" content="">
-    <meta name="Mark Watanabe" content="">
-    <link rel="icon" href="assets/favicon.ico">
-
-    <title>Mad Libs CSC364 Final Project - History</title>
-    <!-- image sources: http://www.madlibs.com/books/
-                        http://www.adamzyglis.com/
-                        http://www.original-political-cartoon.com/cartoon-gallery/artists/mahony-francis-william-1905-1982/
-    -->
-    <!-- Header Scripts -->
-    <?php include "inc_headerScripts.php";?>
+	<!-- Meta Info -->
+	<?php include "inc_meta.php";?>
+	<title>Mad Libs CSC364 Final Project - History</title>
+	<!-- Header Scripts -->
+	<?php include "inc_headerScripts.php";?>
 
 </head>
 
@@ -28,7 +21,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1>Mad Libs History</h1>
-            <img src="assets/img/madlib.png" class="img-responsive" align="right" alt="Mad Lib original cover" width="300" height="472">
+            <img src="assets/img/madlib.png" class="img-responsive" alt="Mad Lib original cover"  id="mainImage">
             <p>Mad Libs was invented in 1953 by Leonard Stern and Roger Price. Stern and Price co-created the game, but couldn't agree on a name for their invention. No name was chosen until five years later (1958), when Stern and Price were eating eggs
                 Benedict at a restaurant in New York City. While eating, the two overheard an argument at a neighboring table between a talent agent and an actor. According to Price and Stern, during the overheard argument, the actor said that he wanted
                 to "ad-lib" an upcoming interview. The agent, who clearly disagreed with the actor's suggestion, retorted that ad-libbing an interview would be "mad". Stern and Price used that eavesdropped conversation to finally create the name "Mad
